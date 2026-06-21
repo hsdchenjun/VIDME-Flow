@@ -2,7 +2,7 @@
 This repository contains the source code for our paper:
 
 [VIDME: Flow Visualization for Complex Fluid Flows via A Variation Inspired Deep Motion Estimator]<br/>
-Submitted to IEEE Transactions on Image Processing <br/>
+Submitted to IEEE Transactions on Visualization and Computer Graphics <br/>
 Jun Chen, Xiaoyin He, He Wang, Guangguang Yang, Zemin Cai, Zhifeng Hao, and Tianshu Liu<br/>
 
 <img src="VIDME.png">
