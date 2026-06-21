@@ -6,7 +6,7 @@ Submitted to IEEE Transactions on Visualization and Computer Graphics <br/>
 Jun Chen, Xiaoyin He, He Wang, Guangguang Yang, Zemin Cai, Zhifeng Hao, and Tianshu Liu<br/>
 
 <img src="VIDME.png">
-
+<img src="VIDME2.png">
 ## Environments
 You will have to choose cudatoolkit version to match your compute environment. 
 The code is tested on PyTorch 1.8.0 but other versions might also work. 
