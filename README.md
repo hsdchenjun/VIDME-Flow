@@ -10,18 +10,17 @@ Jun Chen, Xiaoyin He, He Wang, Guangguang Yang, Zemin Cai, Zhifeng Hao, and Tian
 
 ## Environments
 You will have to choose cudatoolkit version to match your compute environment. 
-The code is tested on PyTorch 1.8.0 but other versions might also work. 
 ```Shell
 conda create --name vidme python==3.7
 conda activate vidme
-conda install pytorch=1.8.0 torchvision=0.9.0 cudatoolkit=11.1 -c pytorch -c conda-forge
-pip install matplotlib imageio einops scipy opencv-python
+pip install -r requirements.txt
 ```
+
 ## Demos
 You can demo a trained model on a sequence of frames
 ```Shell
-python demo.py --model=models/piv_particle_vidme.pth --path=demo-frames
-
+python demo.pyc --model=models/piv_particle_vidme.pth --path=demo-frames
+#python demo.py --model=models/piv_particle_vidme.pth --path=demo-frames
 ```
 
 ## Training
@@ -32,8 +31,8 @@ If you have a Nvidia RTX GPU, training can be accelerated using mixed precision.
 ```
 Or execute the following command：
 ```Shell
-python -u train.py --name piv_particle_vidme --stage particle --validation particle --gpus 0 --num_steps 410000 --batch_size 8 --lr 0.000125 --image_size 256 256 --wdecay 0.0001 --mixed_precision
-
+python -u train.pyc --name piv_particle_vidme --stage particle --validation particle --gpus 0 --num_steps 410000 --batch_size 8 --lr 0.000125 --image_size 256 256 --wdecay 0.0001 --mixed_precision
+#python -u train.py --name piv_particle_vidme --stage particle --validation particle --gpus 0 --num_steps 410000 --batch_size 8 --lr 0.000125 --image_size 256 256 --wdecay 0.0001 --mixed_precision
 ```
 ## Required Data
 
